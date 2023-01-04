@@ -7,6 +7,7 @@ def menu():
     print("[2] - ADD DELETE STUDENT")
     print("[3] - SHOW ALL STUDENTS")
     print(" ")
+    print(" ")
     
 
 def main():
