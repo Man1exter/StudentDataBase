@@ -6,13 +6,17 @@ def menu():
     print("[1] - ADD NEW STUDENT")
     print("[2] - ADD DELETE STUDENT")
     print("[3] - SHOW ALL STUDENTS")
+    print("[4] - EXIT QUIT CLOSE")
     print(" ")
     print(" ")
     
 def stu():
+    
+    print(" ")
     print(" ")
     
     list_base = []
+    
     
     names = input("Name: ")
     surnames = input("Surname: ")
@@ -24,6 +28,10 @@ def stu():
     
     
     list_base.append(human)
+    
+    print(" ")
+    
+    print("NEW STUDENT => ")
     
     print(" ")
     
@@ -40,9 +48,22 @@ def main():
         
        print(" ")
        print("WELCOME " + log + " " + pwd)
-      
+       
        menu()
-       stu()
+       
+       goal = input("YOUR CHOICE: ")
+       
+       if goal == "1":
+           stu()
+       elif goal == "2":
+           pass
+       elif goal == "3":
+           pass
+       elif goal == "4":
+           print(" ")
+           print("QUIT FROM THE BASE " + log + " " + pwd)
+       else:
+           print(" UNKNOWN ")
       
     else:
         print(" ")
